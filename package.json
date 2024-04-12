@@ -1,0 +1,27 @@
+{
+  "name": "ludum-dare-55",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://kniffen.github.io/Ludum-Dare-52",
+  "scripts": {
+    "start": "npx parcel src/index.html",
+    "build": "npx parcel build src/index.html --public-url /Ludum-Dare-55",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kniffen/Ludum-Dare-55.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kniffen/Ludum-Dare-55/issues"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "parcel": "^2.12.0"
+  }
+}
