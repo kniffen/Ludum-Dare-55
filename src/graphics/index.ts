@@ -9,8 +9,8 @@ if (!canvas || !(canvas instanceof HTMLCanvasElement)) {
 export const SCALE = 8;
 export const COLUMNS = 15;
 export const ROWS = 11;
-canvas.width = tileSize * COLUMNS * SCALE;
-canvas.height = tileSize * ROWS * SCALE;
+canvas.width =  Math.floor(tileSize * COLUMNS * SCALE);
+canvas.height = Math.floor(tileSize * ROWS * SCALE);
 
 const ctx = canvas.getContext('2d');
 

@@ -16,3 +16,4 @@ A small game of centered around gathering candles in order to spawn a demon.
 - [ ] Add player health.
 - [ ] Expand map and add NPCs.
 - [ ] Optimize tile, collision and render logic.
+- [ ] Optimize asset loading.

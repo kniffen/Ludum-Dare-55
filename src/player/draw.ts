@@ -29,7 +29,7 @@ export const drawPlayer = (player: Player, dt: number) => {
   const row = Math.floor(frameIndex / columns);
 
   const xOffset = Math.floor(column * tileSize);
-  const yOffset = Math.round(row * tileSize);
+  const yOffset = Math.floor(row * tileSize);
 
   const x = player.x - player.w * 0.5;
   const y = player.y - player.h * 0.5;
