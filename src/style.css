@@ -6,4 +6,13 @@
 body {
   background-color: #222222;
   color: #FFFFFF;
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 1rem;
+}
+
+#canvas {
+  border: 1px solid #000000;
+  margin-block: 2rem;
 }
