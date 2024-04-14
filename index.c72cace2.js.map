@@ -1,1 +1,0 @@
-{"mappings":"ACAA,QAAQ,GAAG,CAAC","sources":["<anon>","src/main.ts"],"sourcesContent":["var $ad2bcec7a0192558$exports = {};\nconsole.log(\"Hello, World!\");\n\n\n//# sourceMappingURL=index.c72cace2.js.map\n","console.log('Hello, World!');"],"names":["console","log"],"version":3,"file":"index.c72cace2.js.map"}

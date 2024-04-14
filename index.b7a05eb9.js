@@ -657,8 +657,8 @@ if (!canvas || !(canvas instanceof HTMLCanvasElement)) throw new Error("Missing 
 const SCALE = 8;
 const COLUMNS = 15;
 const ROWS = 11;
-canvas.width = (0, _tileset.tileSize) * COLUMNS * SCALE;
-canvas.height = (0, _tileset.tileSize) * ROWS * SCALE;
+canvas.width = Math.floor((0, _tileset.tileSize) * COLUMNS * SCALE);
+canvas.height = Math.floor((0, _tileset.tileSize) * ROWS * SCALE);
 const ctx = canvas.getContext("2d");
 if (!ctx) throw new Error("Missing context");
 // @ts-ignore
@@ -857,7 +857,7 @@ const drawPlayer = (player, dt)=>{
     const column = Math.floor(frameIndex % columns);
     const row = Math.floor(frameIndex / columns);
     const xOffset = Math.floor(column * tileSize);
-    const yOffset = Math.round(row * tileSize);
+    const yOffset = Math.floor(row * tileSize);
     const x = player.x - player.w * 0.5;
     const y = player.y - player.h * 0.5;
     ctx.drawImage(image, xOffset, yOffset, tileSize, tileSize, x, y, tileSize, tileSize);
@@ -1718,8 +1718,7 @@ const candle1 = {
     x: 2 * (0, _tileset.tileSize),
     y: 1 * (0, _tileset.tileSize),
     debug: false,
-    // room: 'room-0-0',
-    room: "room-3-3",
+    room: "room-0-0",
     update: ()=>(0, _updateCandle.updateCandle)(candle1),
     draw: ()=>(0, _drawCandle.drawCandle)(candle1)
 };
@@ -1727,8 +1726,7 @@ const candle2 = {
     x: 8 * (0, _tileset.tileSize),
     y: 8 * (0, _tileset.tileSize),
     debug: false,
-    // room: 'room-0-6',
-    room: "room-3-3",
+    room: "room-0-6",
     update: ()=>(0, _updateCandle.updateCandle)(candle2),
     draw: ()=>(0, _drawCandle.drawCandle)(candle2)
 };
@@ -1736,8 +1734,7 @@ const candle3 = {
     x: 12 * (0, _tileset.tileSize),
     y: 8 * (0, _tileset.tileSize),
     debug: false,
-    // room: 'room-7-4',
-    room: "room-3-3",
+    room: "room-7-4",
     update: ()=>(0, _updateCandle.updateCandle)(candle3),
     draw: ()=>(0, _drawCandle.drawCandle)(candle3)
 };
@@ -1745,8 +1742,7 @@ const candle4 = {
     x: 10 * (0, _tileset.tileSize),
     y: 2 * (0, _tileset.tileSize),
     debug: false,
-    // room: 'room-6-0',
-    room: "room-3-3",
+    room: "room-6-0",
     update: ()=>(0, _updateCandle.updateCandle)(candle4),
     draw: ()=>(0, _drawCandle.drawCandle)(candle4)
 };
@@ -1754,8 +1750,7 @@ const candle5 = {
     x: 8 * (0, _tileset.tileSize),
     y: 4 * (0, _tileset.tileSize),
     debug: false,
-    // room: 'room-4-6',
-    room: "room-3-3",
+    room: "room-4-6",
     update: ()=>(0, _updateCandle.updateCandle)(candle5),
     draw: ()=>(0, _drawCandle.drawCandle)(candle5)
 };
